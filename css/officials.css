@@ -198,3 +198,15 @@ section{
         margin-left: 80px;
     }
 }
+
+@media only screen and (max-width: 399px), (max-width: 417px){
+    .row .member{
+        margin-left: 55px;
+    }
+}
+
+@media only screen and (max-width: 286px){
+    .row .member{
+        margin-left: 0;
+    }
+}

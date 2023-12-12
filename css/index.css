@@ -78,6 +78,19 @@
         width: 650px;
     }
 }
+@media only screen and (max-width: 720px){
+    #maps iframe{
+        width: 600px;
+        padding-right: 60px;
+    }
+    #home img{
+        display: none;
+    }
+    #about img{
+        width: 390px;
+        padding-left: 80px;
+    }
+}
 @media only screen and (max-width: 652px){
     #maps iframe{
         width: 550px;

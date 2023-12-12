@@ -73,9 +73,20 @@
     font-weight: 600;
 }
 /*FOOTER*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px), (max-width: 769px){
     #maps iframe{
         width: 650px;
+    }
+}
+
+@media only screen and (max-width: 770px), (max-width: 790px){
+    #maps iframe{
+        width: 650px;
+    }
+}
+@media only screen and (max-width: 791px), (max-width: 890px){
+    #maps iframe{
+        width: 700px;
     }
 }
 @media only screen and (max-width: 720px){

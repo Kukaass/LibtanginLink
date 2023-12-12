@@ -106,10 +106,40 @@
     }
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 540px), (max-width: 547px){
     #maps iframe{
         width: 480px;
         height: 560px;
+        text-align: center;
+    }
+    #home img{
+        display: none;
+    }
+    #about img{
+        width: 350px;
+        padding-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #maps iframe{
+        width: 420px;
+        height: 500px;
+        text-align: center;
+    }
+    #home img{
+        display: none;
+    }
+    #about img{
+        width: 350px;
+        padding-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 452px){
+    #maps iframe{
+        width: 400px;
+        height: 500px;
         text-align: center;
     }
     #home img{

@@ -75,7 +75,7 @@ a:hover{
     transition: color 0.3s;
     color: var(--blue);
     margin: 0 3px;
-    padding-top: 7px;
+    padding-top: 5px;
     border-radius: 50px;
     width: 36px;
     height: 36px;
@@ -103,8 +103,16 @@ a:hover{
     font-size: 13px;
     font-weight: 500;
     color: var(--dark-grey);
+    padding-bottom: 5px;
 }
-
+.team .member .member-info button i{
+    margin-left: 6px;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+.team .member .member-info button i:hover{
+    color: var(--dark);
+}
 section{
     padding: 60px;
     overflow: hidden;
@@ -151,6 +159,34 @@ section{
         transform: skewY(-3deg);
     }
 /*SECTION*/
+
+/*FOOTER*/
+.list-unstyled a{
+    text-decoration: none;
+    color: #342E37;
+}
+.list-unstyled a:hover{
+    color: var(--blue);
+}
+.list .mb-1 a{
+    text-decoration: none;
+    color: #342E37;
+}
+
+.list .mb-1 a:hover{
+    color: var(--blue);
+}
+.social a .bi{
+    color: var(--blue);
+}
+.social h5{
+    font-weight: 700;
+    color: var(--blue);
+}
+.container .link{
+    font-weight: 600;
+}
+/*FOOTER*/
 
 @media only screen and (max-width: 767px){
     .row .member{

@@ -105,3 +105,18 @@
         padding-left: 80px;
     }
 }
+
+@media only screen and (max-width: 540px){
+    #maps iframe{
+        width: 480px;
+        height: 560px;
+        text-align: center;
+    }
+    #home img{
+        display: none;
+    }
+    #about img{
+        width: 350px;
+        padding-left: 80px;
+    }
+}

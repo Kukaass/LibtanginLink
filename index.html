@@ -270,15 +270,15 @@
           <form action="">
             <div class="mb-3">
               <label for="first-name" class="font-weight-bold">First Name</label>
-              <input type="text" class="form-control" id="first-name">
+              <input type="text" class="form-control" id="brfirst-name">
             </div>
             <div class="mb-3">
               <label for="middle-name" class="font-weight-bold">Middle name</label>
-              <input type="text" class="form-control" id="middle-name">
+              <input type="text" class="form-control" id="brmiddle-name">
             </div>
             <div class="mb-3">
               <label for="last-name" class="font-weight-bold">Last Name</label>
-              <input type="text" class="form-control" id="last-name">
+              <input type="text" class="form-control" id="brlast-name">
             </div>
             <div class="mb-3">
               <label for="purpose" class="font-weight-bold">Purpose</label>
@@ -288,7 +288,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary" id="brgyClearanceSubmit">Submit</button>
         </div>
       </div>
     </div>
@@ -308,25 +308,25 @@
           <form action="">
             <div class="mb-3">
               <label for="first-name" class="font-weight-bold">First Name</label>
-              <input type="text" class="form-control" id="first-name">
+              <input type="text" class="form-control" id="rfirst-name">
             </div>
             <div class="mb-3">
               <label for="middle-name" class="font-weight-bold">Middle name</label>
-              <input type="text" class="form-control" id="middle-name">
+              <input type="text" class="form-control" id="rmiddle-name">
             </div>
             <div class="mb-3">
               <label for="last-name" class="font-weight-bold">Last Name</label>
-              <input type="text" class="form-control" id="last-name">
+              <input type="text" class="form-control" id="rlast-name">
             </div>
             <div class="mb-3">
-              <label for="purpose" class="font-weight-bold">2x2 Picture</label>
-              <input type="file" class="form-control" id="purpose">
+              <label for="rpicture" class="font-weight-bold">2x2 Picture</label>
+              <input type="file" class="form-control" id="rpicture">
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary" id="resCertificate">Submit</button>
         </div>
       </div>
     </div>
@@ -368,7 +368,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary" id="businessPermitSubmit">Submit</button>
         </div>
       </div>
     </div>
@@ -415,5 +415,33 @@
   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script> 
+      let fname;
+      let mname;
+      let lname;
+      let purpose;
+      let businessName
+
+      //Barangay Clearance Alert
+      document.getElementById("brgyClearanceSubmit").onclick = function(){
+         fname = document.getElementById("brfirst-name").value;
+         mname = document.getElementById("brmiddle-name").value;
+         lname = document.getElementById("brlast-name").value;
+         purpose = document.getElementById("purpose").value;
+        
+        window.alert("Name: " + fname + " " + mname + " " + lname + "\n Purpose: " + purpose);
+      }
+
+      //Residency Certificate Alert
+      document.getElementById("resCertificate").onclick = function(){
+         fname = document.getElementById("rfirst-name").value;
+         mname = document.getElementById("rmiddle-name").value;
+         lname = document.getElementById("rlast-name").value;
+         picture = document.getElementById("rpicture").value;
+        
+        window.alert("Name: " + fname + " " + mname + " " + lname + "\nImage: " + picture);
+      }
+    </script>
 </body>
 </html>
